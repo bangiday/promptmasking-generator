@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Generator</title>
+</head>
+<body>
+
+<h1>Prompt Generator</h1>
+
+<select id="tema">
+    <option>Gaming Room</option>
+    <option>Studio Streaming</option>
+    <option>Cafe Modern</option>
+</select>
+
+<button onclick="generatePrompt()">
+Generate
+</button>
+
+<br><br>
+
+<textarea id="hasil" rows="10" cols="50"></textarea>
+
+<script>
+function generatePrompt(){
+
+let tema =
+document.getElementById("tema").value;
+
+let prompt =
+tema +
+", ultra realistic, cinematic lighting, 8k";
+
+document.getElementById("hasil").value =
+prompt;
+
+}
+</script>
+
+</body>
+</html>
